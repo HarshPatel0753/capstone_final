@@ -20,21 +20,9 @@ new class extends Component
     <!-- Primary Navigation Menu -->
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
-            <div class="flex">
-                <!-- Logo -->
-                {{-- <div class="flex items-center shrink-0">
-                    <a href="{{ route('dashboard') }}" wire:navigate>
-                        <x-application-logo class="block w-auto text-gray-800 fill-current h-9" />
-                    </a>
-                </div> --}}
-
-                <!-- Navigation Links -->
-                {{-- <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
-                        {{ __('Dashboard') }}
-                    </x-nav-link>
-                </div> --}}
-            </div>
+            <div class="mb-4 text-center">
+                    <img src="{{ asset('images/logo_forum.png') }}" alt="Logo" style="max-width: 110px; max-height: 110px;">
+                </div>
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">

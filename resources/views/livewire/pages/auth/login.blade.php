@@ -29,6 +29,12 @@ new #[Layout('layouts.guest')] class extends Component
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
     <form wire:submit="login">
+        <div class="flex justify-center mb-6">
+            <a href="/">
+                <img src="{{ asset('images/logo_forum.png') }}" alt="Logo" class="" style="max-width: 200px; max-height: 200px;" />
+            </a>
+        </div>
+
         <!-- Email Address -->
         <div>
             <x-input-label for="email" :value="__('Email')" />
